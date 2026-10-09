@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "schema": 1,
+  "generated_at": "2026-10-09T10:30:44.873Z",
+  "catalog_path": "/data/catalog-daily.json",
+  "history_path": "/data/catalog-history.json",
+  "catalog_url": "https://mandarijnwijn.github.io/moatlens-catalog/data/catalog-daily.json",
+  "history_url": "https://mandarijnwijn.github.io/moatlens-catalog/data/catalog-history.json",
+  "sha256": "3df7df47b0f672ac5c6e047682f30a411a2caa3173fcc3ed966890dd2e4b861f",
+  "file_size_bytes": 12470850,
+  "count": 6499,
+  "scored_count": 6499,
+  "score_model": "investerendoejezo-framework-1.1",
+  "source_status": "live",
+  "secondary_source_status": "live",
+  "performance_validation": {
+    "status": "collecting",
+    "method": "point-in-time score versus later EUR Tradegate midpoint return",
+    "immutable_score_criteria": true,
+    "horizons": [
+      {
+        "target_days": 30,
+        "status": "collecting",
+        "observation_count": 0
+      },
+      {
+        "target_days": 90,
+        "status": "collecting",
+        "observation_count": 0
+      },
+      {
+        "target_days": 180,
+        "status": "collecting",
+        "observation_count": 0
+      },
+      {
+        "target_days": 365,
+        "status": "collecting",
+        "observation_count": 0
+      }
+    ],
+    "limitations": [
+      "Rendement gebruikt Tradegate-midpoints in EUR en bevat geen dividend of transactiekosten.",
+      "De benchmark is het gelijkgewogen beschikbare universum uit dezelfde historische momentopname.",
+      "Ontbrekende uitkomsten worden geteld en niet als nulrendement behandeld.",
+      "Resultaten beschrijven het verleden en zijn geen financieel advies."
+    ]
+  }
+}
