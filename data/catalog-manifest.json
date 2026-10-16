@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "schema": 1,
+  "generated_at": "2026-10-16T08:08:24.920Z",
+  "catalog_path": "/data/catalog-daily.json",
+  "history_path": "/data/catalog-history.json",
+  "catalog_url": "https://mandarijnwijn.github.io/moatlens-catalog/data/catalog-daily.json",
+  "history_url": "https://mandarijnwijn.github.io/moatlens-catalog/data/catalog-history.json",
+  "sha256": "daf2a1d23d2ceb8c3e9a5f90a9907086e3e591117cc1c6bc260a81b6e2760ca7",
+  "file_size_bytes": 12475795,
+  "count": 6502,
+  "scored_count": 6502,
+  "score_model": "investerendoejezo-framework-1.1",
+  "source_status": "live",
+  "secondary_source_status": "live",
+  "performance_validation": {
+    "status": "active",
+    "method": "point-in-time score versus later EUR Tradegate midpoint return",
+    "immutable_score_criteria": true,
+    "horizons": [
+      {
+        "target_days": 30,
+        "status": "collecting",
+        "observation_count": 0
+      },
+      {
+        "target_days": 90,
+        "elapsed_days": 67,
+        "score_captured_at": "2026-08-09T20:56:11.267Z",
+        "measured_at": "2026-10-16T08:08:24.920Z",
+        "observation_count": 6342,
+        "missing_outcome_count": 121,
+        "equal_weight_universe_return": -0.0457,
+        "spearman_score_vs_excess_return": 0.2521,
+        "buckets": {
+          "0-49": {
+            "count": 3157,
+            "average_return": -0.0779,
+            "average_excess_return": -0.0322,
+            "hit_rate_vs_universe": 0.4102
+          },
+          "50-64": {
+            "count": 1920,
+            "average_return": -0.0183,
+            "average_excess_return": 0.0274,
+            "hit_rate_vs_universe": 0.5828
+          },
+          "65-79": {
+            "count": 1081,
+            "average_return": -0.0073,
+            "average_excess_return": 0.0384,
+            "hit_rate_vs_universe": 0.5883
+          },
+          "80-100": {
+            "count": 184,
+            "average_return": -0.0045,
+            "average_excess_return": 0.0412,
+            "hit_rate_vs_universe": 0.6576
+          }
+        }
+      },
+      {
+        "target_days": 180,
+        "status": "collecting",
+        "observation_count": 0
+      },
+      {
+        "target_days": 365,
+        "status": "collecting",
+        "observation_count": 0
+      }
+    ],
+    "limitations": [
+      "Rendement gebruikt Tradegate-midpoints in EUR en bevat geen dividend of transactiekosten.",
+      "De benchmark is het gelijkgewogen beschikbare universum uit dezelfde historische momentopname.",
+      "Ontbrekende uitkomsten worden geteld en niet als nulrendement behandeld.",
+      "Resultaten beschrijven het verleden en zijn geen financieel advies."
+    ]
+  }
+}
